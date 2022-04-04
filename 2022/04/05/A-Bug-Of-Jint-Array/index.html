@@ -20,23 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"zhixiao-kooboo.github.io","root":"/blogs/","images":"/blogs/images","scheme":"Gemini","darkmode":false,"version":"8.11.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/blogs/js/config.js"></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Zhixiao&#39;s Blog">
-<meta property="og:url" content="https://zhixiao-kooboo.github.io/blogs/index.html">
+    <meta name="description" content="Github issuehttps:&#x2F;&#x2F;github.com&#x2F;sebastienros&#x2F;jint&#x2F;issues&#x2F;846 问题The code is like following 1234567891011121314151617            var list &#x3D; new List&lt;int&gt;();            for(var i &#x3D; 0; i &lt; 10; i++">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Jint Bug: Setting Value to Array inside an object is not work">
+<meta property="og:url" content="https://zhixiao-kooboo.github.io/blogs/2022/04/05/A-Bug-Of-Jint-Array/index.html">
 <meta property="og:site_name" content="Zhixiao&#39;s Blog">
+<meta property="og:description" content="Github issuehttps:&#x2F;&#x2F;github.com&#x2F;sebastienros&#x2F;jint&#x2F;issues&#x2F;846 问题The code is like following 1234567891011121314151617            var list &#x3D; new List&lt;int&gt;();            for(var i &#x3D; 0; i &lt; 10; i++">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-04-04T16:10:21.000Z">
+<meta property="article:modified_time" content="2022-04-04T16:12:36.459Z">
 <meta property="article:author" content="Zhixiao Lin">
+<meta property="article:tag" content="Jint">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://zhixiao-kooboo.github.io/blogs/">
+<link rel="canonical" href="https://zhixiao-kooboo.github.io/blogs/2022/04/05/A-Bug-Of-Jint-Array/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://zhixiao-kooboo.github.io/blogs/2022/04/05/A-Bug-Of-Jint-Array/","path":"2022/04/05/A-Bug-Of-Jint-Array/","title":"Jint Bug: Setting Value to Array inside an object is not work"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Zhixiao's Blog</title>
+<title>Jint Bug: Setting Value to Array inside an object is not work | Zhixiao's Blog</title>
   
 
 
@@ -66,7 +71,7 @@
 
     <a href="/blogs/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Zhixiao's Blog</h1>
+      <p class="site-title">Zhixiao's Blog</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -98,7 +103,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -111,6 +116,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Github-issue"><span class="nav-number">1.</span> <span class="nav-text">Github issue</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%97%AE%E9%A2%98"><span class="nav-number">2.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#WalkAruond"><span class="nav-number">3.</span> <span class="nav-text">WalkAruond</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -164,94 +170,17 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://zhixiao-kooboo.github.io/blogs/2022/04/05/JintInvokeDotNet/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/blogs/images/avatar.gif">
-      <meta itemprop="name" content="Zhixiao Lin">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhixiao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Zhixiao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/blogs/2022/04/05/JintInvokeDotNet/" class="post-title-link" itemprop="url">How to invoke .Net in Jint</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-04-05 00:13:37 / Modified: 00:15:59" itemprop="dateCreated datePublished" datetime="2022-04-05T00:13:37+08:00">2022-04-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/blogs/categories/Jint/" itemprop="url" rel="index"><span itemprop="name">Jint</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="With-Action-and-Callback"><a href="#With-Action-and-Callback" class="headerlink" title="With Action and Callback"></a>With Action and Callback</h2><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> Jint.Native;</span><br><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Threading;</span><br><span class="line"><span class="keyword">using</span> System.Threading.Tasks;</span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">Jint.Demo</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] args</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">var</span> engine = <span class="keyword">new</span> Engine();</span><br><span class="line">            <span class="keyword">var</span> test2 = <span class="keyword">new</span> Test2();</span><br><span class="line">            <span class="keyword">var</span> test = <span class="keyword">new</span> Test(<span class="keyword">new</span> Action(() =&gt; &#123; test2.Callback(engine.GetValue); &#125;));</span><br><span class="line">            engine.SetValue(<span class="string">&quot;test&quot;</span>, test);</span><br><span class="line">            engine.SetValue(<span class="string">&quot;context&quot;</span>, <span class="number">1</span>);</span><br><span class="line">            engine.Execute(<span class="string">@&quot;context = 10;test.Wait(2, 2, function()&#123; context++; &#125;);&quot;</span>);</span><br><span class="line">            <span class="keyword">var</span> context = engine.GetValue(<span class="string">&quot;context&quot;</span>);</span><br><span class="line">            Console.WriteLine(<span class="string">&quot;context: &quot;</span> + context);</span><br><span class="line">            Console.ReadLine();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Test</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">private</span> <span class="keyword">readonly</span> Action callback;</span><br><span class="line"></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="title">Test</span>(<span class="params">Action callback</span>)</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">this</span>.callback = callback;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Wait</span>(<span class="params"><span class="built_in">int</span> times, <span class="built_in">int</span> second, Action action</span>)</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">var</span> count = <span class="number">0</span>;</span><br><span class="line">                <span class="keyword">while</span> (count &lt;= times)   </span><br><span class="line">                &#123;</span><br><span class="line">                    action();</span><br><span class="line">                    callback();</span><br><span class="line">                    count++;</span><br><span class="line">                    Thread.Sleep(second * <span class="number">1000</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Test2</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">Callback</span>(<span class="params">Func&lt;<span class="built_in">string</span>, JsValue&gt; getContext</span>)</span></span><br><span class="line">            &#123;</span><br><span class="line">                Console.WriteLine(<span class="string">&quot;Callback is called&quot;</span> + getContext(<span class="string">&quot;context&quot;</span>));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="https://zhixiao-kooboo.github.io/blogs/2022/04/05/A-Bug-Of-Jint-Array/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -265,13 +194,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Zhixiao's Blog">
+      <meta itemprop="name" content="Jint Bug: Setting Value to Array inside an object is not work | Zhixiao's Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/blogs/2022/04/05/A-Bug-Of-Jint-Array/" class="post-title-link" itemprop="url">Jint Bug: Setting Value to Array inside an object is not work</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Jint Bug: Setting Value to Array inside an object is not work
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -304,7 +233,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="Github-issue"><a href="#Github-issue" class="headerlink" title="Github issue"></a>Github issue</h2><p><a target="_blank" rel="noopener" href="https://github.com/sebastienros/jint/issues/846">https://github.com/sebastienros/jint/issues/846</a></p>
+        <h2 id="Github-issue"><a href="#Github-issue" class="headerlink" title="Github issue"></a>Github issue</h2><p><a target="_blank" rel="noopener" href="https://github.com/sebastienros/jint/issues/846">https://github.com/sebastienros/jint/issues/846</a></p>
 <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>The code is like following</p>
 <figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">            <span class="keyword">var</span> list = <span class="keyword">new</span> List&lt;<span class="built_in">int</span>&gt;();</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++)</span><br><span class="line">            &#123;</span><br><span class="line">                list.Add(<span class="number">0</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">var</span> array = list.ToArray();</span><br><span class="line">            array[<span class="number">2</span>] = <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">var</span> engine = <span class="keyword">new</span> Jint.Engine()</span><br><span class="line">                .SetValue(<span class="string">&quot;Test&quot;</span>, <span class="keyword">new</span> &#123; Array = array &#125;);</span><br><span class="line"></span><br><span class="line">            <span class="keyword">var</span> script = <span class="string">@&quot;</span></span><br><span class="line"><span class="string">Test.Array[0]=1;</span></span><br><span class="line"><span class="string">Test.Array[1]=2;</span></span><br><span class="line"><span class="string">Test.Array[2]=3;&quot;</span>;</span><br><span class="line">            <span class="keyword">var</span> arrayResult = engine.Execute(script).GetValue(<span class="string">&quot;Test&quot;</span>).ToObject();</span><br><span class="line"></span><br><span class="line">            Console.WriteLine(JsonConvert.SerializeObject(arrayResult));</span><br></pre></td></tr></table></figure>
 <p>All the values which I set to <code>Test.Array</code> are not working as expected.<br>Here is the output<br><code>&#123;&quot;Array&quot;:[0,0,2,0,0,0,0,0,0,0]&#125;</code></p>
@@ -316,7 +245,6 @@
 
 <p>The result is <code>&#123;&quot;Variables&quot;:&#123;&quot;Array&quot;:[2.0,2.0,3.0,4.0],&quot;EmptyArray&quot;:[5.0,null,null,5.0]&#125;&#125;</code> </p>
 
-      
     </div>
 
     
@@ -324,106 +252,28 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+          <div class="post-tags">
+              <a href="/blogs/tags/Jint/" rel="tag"># Jint</a>
+          </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://zhixiao-kooboo.github.io/blogs/2022/04/04/SemaphoreSlim/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/blogs/images/avatar.gif">
-      <meta itemprop="name" content="Zhixiao Lin">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Zhixiao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Zhixiao's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/blogs/2022/04/04/SemaphoreSlim/" class="post-title-link" itemprop="url">理解 SemaphoreSlim</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-04-04 19:16:35" itemprop="dateCreated datePublished" datetime="2022-04-04T19:16:35+08:00">2022-04-04</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-04-05 00:04:01" itemprop="dateModified" datetime="2022-04-05T00:04:01+08:00">2022-04-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/blogs/categories/Net%E5%9F%BA%E7%A1%80/" itemprop="url" rel="index"><span itemprop="name">.Net基础</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><p>Semaphore 的轻量级替代方案，它限制可以同时访问资源或资源池的线程数。</p>
-<h2 id="理解"><a href="#理解" class="headerlink" title="理解"></a>理解</h2><p>在幼儿园里，因为体育室空间有限，老师设计了一个方案，使用 SemaphoreSlim 来控制有多少孩子可以在体育室玩耍。</p>
-<p>他们在房间外面的地板上画了五对脚印。</p>
-<p>当孩子们想要进体育室时，他们将鞋子留在一双空脚印上，然后进入房间。<br>一旦他们玩完他们就会出来，他们就会穿上自己的鞋子，并“释放”一个空脚印(Slot)。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/blogs/2022/04/04/SemaphoreSlim/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/blogs/2022/04/04/SemaphoreSlim/" rel="prev" title="理解 SemaphoreSlim">
+                  <i class="fa fa-chevron-left"></i> 理解 SemaphoreSlim
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/blogs/2022/04/05/JintInvokeDotNet/" rel="next" title="How to invoke .Net in Jint">
+                  How to invoke .Net in Jint <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
   </article>
 </div>
+
 
 
 
