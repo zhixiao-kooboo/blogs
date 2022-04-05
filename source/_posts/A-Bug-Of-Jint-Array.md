@@ -55,6 +55,31 @@ Test[2]=3;";
             Console.ReadLine();
 ```
 
+Unit test to reproduce the issue
+```CSharp
+        [Fact]
+        public void SetArrayValue()
+        {
+            var list = new List<int>();
+            for (var i = 0; i < 10; i++)
+            {
+                list.Add(0);
+            }
+            var array = list.ToArray();
+            _engine.SetValue("Test", new { Array = array });
+
+            var script = @"
+Test.Array[0]=1;
+Test.Array[1]=2;
+Test.Array[2]=3;
+Test.Array[2]";
+            var executedResult = _engine.Execute(script).GetValue("Test").ToObject();
+            var executedResult2 = _engine.Execute(script).GetCompletionValue().ToObject();
+
+            Assert.Equal(1, 1);
+        }
+```
+
 ## WalkAruond
 Found a new idea to work around of this bug
 ```CSharp
@@ -82,3 +107,5 @@ Context.Variables.EmptyArray[3]=5";
 
 The result is `{"Variables":{"Array":[2.0,2.0,3.0,4.0],"EmptyArray":[5.0,null,null,5.0]}}` 
 
+## Root cause from author
+I did a quick analysis yester day and the root cause is that Jint wraps array as JS array, I think in interop scenario it should be left as regular object wrapper allowing indexing. I think one would expect `engine.SetValue("myvar", new int [] { 1, 2, 3});` to be changed to JS array instance (allowing push/find etc), but not when accessing object's property.
