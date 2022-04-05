@@ -28,7 +28,7 @@
 <meta property="og:description" content="描述Jint可以实现和.Net的交互  从Javascript中修改CLR中的Object, 包括: Single values Objects Properties Methods Delegates Anonymous objects   从Javascript的Values转换成CLR的Object Primitive values Object -&gt; expando objects">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-04-04T16:13:37.000Z">
-<meta property="article:modified_time" content="2022-04-05T08:26:39.533Z">
+<meta property="article:modified_time" content="2022-04-05T08:30:32.635Z">
 <meta property="article:author" content="Zhixiao Lin">
 <meta property="article:tag" content="Jint">
 <meta name="twitter:card" content="summary">
@@ -211,7 +211,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2022-04-05 00:13:37 / Modified: 16:26:39" itemprop="dateCreated datePublished" datetime="2022-04-05T00:13:37+08:00">2022-04-05</time>
+      <time title="Created: 2022-04-05 00:13:37 / Modified: 16:30:32" itemprop="dateCreated datePublished" datetime="2022-04-05T00:13:37+08:00">2022-04-05</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -258,6 +258,8 @@
 </ul>
 </li>
 </ul>
+<span id="more"></span>
+
 <h1 id="Jint调用-Net"><a href="#Jint调用-Net" class="headerlink" title="Jint调用.Net"></a>Jint调用.Net</h1><h2 id="从JS中修改-Net的值"><a href="#从JS中修改-Net的值" class="headerlink" title="从JS中修改.Net的值"></a>从JS中修改.Net的值</h2><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> p = <span class="keyword">new</span> Person &#123;</span><br><span class="line">    Name = <span class="string">&quot;Mickey Mouse&quot;</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> engine = <span class="keyword">new</span> Engine()</span><br><span class="line">    .SetValue(<span class="string">&quot;p&quot;</span>, p)</span><br><span class="line">    .Execute(<span class="string">&quot;p.Name = &#x27;Minnie&#x27;&quot;</span>);</span><br><span class="line"></span><br><span class="line">Assert.AreEqual(<span class="string">&quot;Minnie&quot;</span>, p.Name);</span><br></pre></td></tr></table></figure>
 
 <h2 id="调用-Net方法"><a href="#调用-Net方法" class="headerlink" title="调用.Net方法"></a>调用.Net方法</h2><figure class="highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> engine = <span class="keyword">new</span> Engine()</span><br><span class="line">    .SetValue(<span class="string">&quot;log&quot;</span>, <span class="keyword">new</span> Action&lt;<span class="built_in">object</span>&gt;(Console.WriteLine));</span><br><span class="line">    </span><br><span class="line">engine.Execute(<span class="string">@&quot;</span></span><br><span class="line"><span class="string">    function hello() &#123; </span></span><br><span class="line"><span class="string">        log(&#x27;Hello World&#x27;);</span></span><br><span class="line"><span class="string">    &#125;;</span></span><br><span class="line"><span class="string"> </span></span><br><span class="line"><span class="string">    hello();</span></span><br><span class="line"><span class="string">&quot;</span>);</span><br></pre></td></tr></table></figure>
