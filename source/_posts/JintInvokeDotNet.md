@@ -26,6 +26,8 @@ Jint可以实现和.Net的交互
    -  Function -> Delegate
    -  Extensions methods
 
+<!-- more -->
+
 # Jint调用.Net
 ## 从JS中修改.Net的值
 ```CSharp
